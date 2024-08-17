@@ -148,3 +148,10 @@ mergeHTMLReports([
 ], {
   outputFolder: 'merged-reports',
 });
+test('hotel destination', async ({page}) => {
+    await page.goto('https://www.easemytrip.com/hotels/');
+    //page.waitForLoadState('networkidle');
+    await page.locator('a[class="close_o_pp"]').click();
+    page.locator('input[name="txtCity"]').fill('pune');
+  });
+
