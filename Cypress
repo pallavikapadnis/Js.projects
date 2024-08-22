@@ -1,0 +1,29 @@
+describe('template spec', () => {
+  it('passes', () => {
+    cy.visit('www.amazon.in')
+    // assertions
+    // expect(true).to.equal(true)
+    cy.get('#twotabsearchtextbox').type('grocary')
+    cy.get('#nav-search-submit-button').click()
+  })
+})
+
+describe('template spec', () => {
+  it('passes', () => {
+    cy.visit('www.amazon.in')
+    // assertions
+    // expect(true).to.equal(true)
+    cy.get('#twotabsearchtextbox').type('iphone')
+    cy.get('#nav-search-submit-button').click()
+  })
+})
+
+describe('template spec', () => {
+  it('passes', () => {
+    cy.visit('www.flipcark.in')
+    // assertions
+    // expect(true).to.equal(true)
+    cy.get('#twotabsearchtextbox').type('watch')
+    cy.get('#nav-search-submit-button').click()
+  })
+})
